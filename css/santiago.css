@@ -1,0 +1,680 @@
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-father{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 120px 200px 1fr;
+    font-family: Verdana,sans-serif;
+}
+
+/* ----- NAVBAR SANTIAGO ----- */
+
+.header-container{
+    grid-column: 1 /span 3;
+}
+
+.contenedorNav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contenedorNav .oneUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+    width: 76%;
+    margin: 10px;
+}
+
+.contenedorNav .twoUl{
+    display: grid;
+    place-items: center;
+    width: 10%;
+    margin: 10px;
+    padding: 0;
+}
+
+.oneUl{
+    font-size: 15px;
+}
+
+.contenedorNav li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.opt-menu{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.opt-repair{
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+/* ----- NAVBAR RESERVA SANTIAGO ----- */
+
+/* .nav-father{
+    border-bottom: 1px solid;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items:end;
+    border-bottom: 1px solid;
+}
+
+.nav-father img{
+    width: 135px;
+}
+
+.nav-text{
+    text-decoration: none;
+}
+
+.nav-opt-menu{
+    font-size: 20px;
+}
+
+.nav-opt-repair{
+    font-size: 25px;
+}
+
+.profe-img{
+    grid-row: 1;
+    grid-column: 3;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.img-profe{
+    height: auto;
+    width: 90px;
+} */
+
+/* ----- FIN DE NAVBAR RESERVA ---- */
+
+
+/* ----- CONTEINER PAGAR SANTIAGO ----- */
+
+.pay-father{
+    grid-row: 2;
+    grid-column:2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pay{
+    height: auto;
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.pay-title{
+    margin: 0;
+}
+
+.pay-p{
+    width: 560px;
+    align-self: center;
+    font-size: 13px;
+}
+
+
+/* ----- CONTEINER BAJO SANTIAGO ----- */
+
+.button-container{
+    grid-row: 3;
+    grid-column: 1 /span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto-father{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 5px;
+    width: 25%;
+    height: 80%;
+}
+
+.contacto-title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.contacto-p{
+    width: 340  px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.inputs-general{
+    height: 50px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.label-general{
+    font-size: 13px;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.form-contacto-facturacion{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.names-container, .otros-container{
+    display: flex;
+}
+
+.names-container{
+    gap: 10px;
+}
+
+.otros-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.area-cont{
+    width: 40%;
+}
+.area{
+    width: 100%;
+}
+.num-cont{
+    width: 60%;
+}
+.numero{
+    width: 100%;
+}
+
+.correo-contacto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.correo-contacto-container input{
+    width: 50%;
+}
+
+/* ----- METODO DE PAGO SANTIAGO ----- */
+
+.metodo-pago-father{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 25%;
+    height: 80%;
+}
+
+.metodo-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.mastercard-icon{
+    width: 65px;
+    height: auto;
+}
+
+.american-icon{
+    width: 55px;
+    height: auto;
+}
+
+.visa-icon{
+    width: 60px;
+}
+
+.visa-container{
+    width: 80px; 
+    height: 50px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: #0050F5;
+}
+
+.form-metodo-pago{
+    width: 85%;
+}
+
+.numb-tarjeta-container{
+    text-align: left;    
+}
+.cvv-fecha-exp{
+    display: flex;
+    gap: 5px;
+}
+
+.cvv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cvv,.fecha-expira{
+    text-align: left;
+}
+
+
+.cvv input{
+    width: 60%;
+}
+
+
+.fecha-expira{
+    width: 50%;
+}
+
+.calendar-cont{
+    display: flex;
+    align-items: center;
+}
+
+.calendar-cont img{
+    width: 28px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+/* ----- INFORMACION ORDEN SANTIAGO ----- */
+
+.linea-ord{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 90%;
+}
+
+.main-ord{
+    width: 80%;
+}
+
+.orden-father{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+}
+
+.orden-title{
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.letra-pequeña{
+    font-size: 13px;
+}
+
+.negrita{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+.iva-container{
+    height: 25px;
+}
+
+.linea-ord-diferente{
+    margin-top: 30px;
+}
+
+.detail-price{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.total-price{
+    font-weight: 600;
+}
+
+.footer-ord{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-ord p{
+    width: 90%;
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer-button{
+    width: 200px;
+    height: 52px;
+    background-color:#0050F5 ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.footer-ord a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-button:hover{
+    background-color: transparent;
+    border: 1.5px solid #0050F5;
+    color: #0050F5;
+}
+
+.footer-button:hover a{
+    color: #0050F5;
+}
+
+
+
+/* ---- PAGINA CHECK SANTIAGO ---- */
+
+.container-father-2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 120px 200px 1fr;
+    font-family: Verdana,sans-serif;
+}
+
+.info-container{
+    grid-column: 1 /span 3;
+    grid-row: 2 /span 3;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.tools-container{
+    text-align: center;
+}
+
+.logo-tools{
+    height: auto;
+    width: 60px;
+}
+
+.tools-container h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.fa-circle-check{
+    font-size: 150px;
+    color: #88C14A;
+    margin-bottom: 20px;
+}
+
+.check-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9%;
+}
+
+.check-container h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+.check-container p{
+    width: 590px;
+    text-align: center;
+}
+
+.opcion-2{
+    margin-top: 35px;
+}
+
+/* MEDIA QUERRIES SANTIAGO */
+
+@media (max-width:1440px) {
+    .button-container{
+        align-items: start;
+    }
+
+    .main-ord{
+        width: 90%;
+    }
+    
+    .negrita{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .cvv-fecha-exp{
+        align-items: center;
+    }
+}
+
+@media (max-width:1025px) {
+    .label-general{
+        font-size: 12px;
+    }
+
+    .fecha-expira{
+        width: 60%;
+    }
+    .cvv{
+        width: 40%;
+    }
+    .cvv input{
+        width: 95%;
+    }
+
+    .orden-father{
+        width: 30%;
+    }
+    .contacto-father{
+        width: 35%;
+    }
+    .metodo-pago-father{
+        width: 30%;
+    }
+
+    .info-container{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:768px) {
+
+    .container-father{
+        grid-template-columns: 1fr;
+        grid-template-rows: 13% 15% 1fr;
+        height: auto;
+    }
+
+
+    /* NAV RESPONSIVE */
+    .contenedorNav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .oneUl{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+
+    .contenedorNav .twoUl{
+        display: none;
+        width: 0%;
+    }
+
+    .oneUl li img{
+        order: 1;
+    }
+
+    .oneUl li:first-child{
+        order: 2;
+    }
+
+    .oneUl li:last-child{
+        order: 3;
+    }
+
+    .twoUl li{
+        display: none;
+    }
+
+    /* PAGAR RESPONSIVE */
+
+    .pay-father{
+        grid-column: 1;
+    }
+
+    .pay-p{
+        width: 80%;
+    }
+
+
+    /* BUTTON CONTAINER */
+
+    .button-container{
+        flex-direction: column;
+        align-items:center ;
+    }
+
+    .contacto-father{
+        width: 90%;
+    }
+
+    .metodo-pago-father{
+        width: 100%;
+    }
+
+    .orden-father{
+        margin:20px 0;
+        width: 100%;
+        border-top: 2px solid rgba(0, 0, 0, 0.438);
+    }
+
+    .linea-ord{
+        width: 100%;
+    }
+
+    .detail-price{
+        width: 100%;
+    }
+
+    /* PAGINA CHECK */
+
+        
+    .container-father-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 13% 15%  1fr;
+        height: auto;
+    }
+
+    .info-container{
+        grid-row: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .check-container{
+        margin-bottom: 0px;
+    }
+
+    .tools-container{
+        margin-bottom: 50px;
+    }
+
+    .check-container h3{
+        margin-bottom: 25px;
+    }
+
+    .check-container p{
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:426px) {
+
+    .correo-contacto-container input{
+        width: 100%;
+    }
+
+    .check-container p{
+        width: 70%;
+    }
+    
+}

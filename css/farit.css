@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Kollektif';
+    src: url('/css/fonts/Kollektif-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+body{
+    font-family: 'Kollektif' !important;
+    color: #000;
+    background-color: #fff;
+}
+
+/* PARTE REPARAR YA (FARIT) */
+
+a{
+    color: #000;
+}
+
+.header-container{
+    width:100%;
+}
+
+.contenedorNav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contenedorNav .oneUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 76%;
+    margin: 10px;
+}
+
+.opt-menu{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.opt-repair{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contenedorNav .twoUl{
+    display: grid;
+    place-items: center;
+    width: 10%;
+    margin: 10px;
+    padding: 0;
+}
+
+.contenedorNav li,a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* MAINN */
+.contenedorMain{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.contenedorPrincipal{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+
+.contenedorGeneralSecundario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedorSecundario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.contenedorSecundario h2{
+    text-align: center;
+}
+
+.selectImg{
+    display: flex;
+    place-items: center;
+    gap: 10px;
+}
+
+.imgSer{
+    display: grid;
+    place-items: center;
+    gap: 5px;
+    border-radius: 26px;
+    padding: 10px;
+}
+
+.imgSer:hover{
+    background-color:#0050F5;
+    color: white;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario input{
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 35px;
+    opacity: 1;
+}
+
+.placeholder{
+    padding: 25px;
+}
+
+.btn{
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    width: 200px;
+    height: 52px;
+    background: #0050F5 0% 0% no-repeat padding-box;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: all 300ms ease;
+    opacity: 1;
+}
+
+.btn:hover{
+    color: #0050F5;
+    background-color: white;
+    border: 1px solid #0050F5;
+    cursor: pointer;
+}
+
+@media (max-width:1030px){
+    .contenedorGeneralSecundario{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Comenzando Modal (FARIT) */
+/*:::Boton-Modal:::*/
+.boton-modal{
+    padding: 40px;
+}
+.boton-modal label{
+    padding: 10px;
+    background-color: rgb(0, 128, 255);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: #185E83;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+
+.container-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(94, 96, 97, 0.798);
+    display: none;
+    place-items: center;
+    z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: grid;
+}
+
+.content-modal{ 
+    width: 650px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #707070;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 59px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-modal > p{
+    font-size: 25px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+.form input{
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 35px;
+    opacity: 1;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+}
+
+.content-modal > p{
+    font-size: 25px;
+}
+
+.iconRedes img{
+    width: 30px;
+    height: 30px;
+}
+
+.redesImg{
+    display: flex;
+    gap: 10px;
+}
+
+.iconRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #707070;
+    width: 90%;
+    padding: 5px;
+}
+
+.btn-cerrar{
+    width: 100%;
+    margin: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* MODAL DOS */
+#btnTwoModal{
+    display: none;
+}
+
+.containerTwo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(94, 96, 97, 0.798);
+    display: none;
+    place-items: center;
+    z-index: 100;
+}
+
+#btnTwoModal:checked ~ .containerTwo{
+    display: grid;
+}
+
+.contentTwo{
+    width: 650px;
+    padding: 20px;
+    border: 1px solid #707070;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 59px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.contentTwo > p{
+    font-size: 25px;
+}
+
+.btnTwo{
+    width: 100%;
+    margin: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contentTwo .btnTwo label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+/*:::Fin Ventana Modal:::*/
+
+@media (max-width:660px){
+    .content-modal{
+        width: 450px;
+    }
+
+    .content-modal > p{
+        font-size: 22px;
+    }
+
+    .contentTwo{
+        width: 450px;
+    }
+
+    .contentTwo > p{
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+/* Responsive nav */
+@media (max-width:768px) {
+    .contenedorNav{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .oneUl{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .contenedorNav .twoUl{
+        display: none;
+        width: 0%;
+    }
+
+    .oneUl li img{
+        order: 1;
+    }
+    
+    .oneUl li:first-child{
+        order: 2;
+    }
+    
+    .oneUl li:last-child{
+        order: 3;
+    }
+    
+    .twoUl li{
+        display: none;
+    }
+}
